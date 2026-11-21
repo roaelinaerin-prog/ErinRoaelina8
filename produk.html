@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Produk Momoy Cheesetea – Smoothie, Avocado & Cheese Tea</title>
+  <meta name="description" content="Jelajahi menu lengkap Momoy Cheesetea: Avocado Smoothie, Mango Smoothie, Strawberry Coco, Choco Nutella, dan banyak lagi. Tersedia 5 pilihan topping. Harga mulai Rp 14.000." />
+  <link rel="canonical" href="https://momoycheesetea.com/produk.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://momoycheesetea.com/produk.html" />
+  <meta property="og:title" content="Menu Produk Momoy Cheesetea – Smoothie, Avocado & Cheese Tea" />
+  <meta property="og:description" content="Jelajahi menu lengkap Momoy Cheesetea: 12+ varian minuman segar mulai Rp 14.000. Pesan via WhatsApp sekarang!" />
+  <meta property="og:image" content="https://momoycheesetea.com/assets/img/og-image.jpg" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <i class="bi bi-cup-hot-fill" style="font-size:1.6rem; color:#FFD700;"></i>
+        <div>
+          <span class="brand-name">Momoy</span>
+          <span class="brand-sub d-block" style="font-size:0.65rem; letter-spacing:3px; opacity:0.85; line-height:1;">CHEESETEA</span>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="artikel-1.html">Tips & Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-warning btn-sm px-3 fw-700" href="https://wa.me/628138199863?text=Halo%20Momoy%20Cheesetea,%20saya%20ingin%20pesan!&utm_source=website&utm_medium=navbar&utm_campaign=cta_pesan"
+               target="_blank" rel="noopener" onclick="gtag('event','whatsapp_click',{'event_category':'conversion','event_label':'navbar'});">
+              <i class="bi bi-whatsapp me-1"></i> Pesan Sekarang
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container text-center text-white">
+      <p style="color:#FFD700;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.85rem;">Pilihan Terlengkap</p>
+      <h1 class="fw-900 mb-3" style="font-family:'Nunito',sans-serif;font-size:clamp(2rem,5vw,3rem);">Menu & Produk Kami</h1>
+      <p class="opacity-90 mx-auto" style="max-width:500px;">12+ varian minuman segar dengan bahan pilihan berkualitas. Tambah topping favoritmu hanya +Rp 4.000!</p>
+      <nav aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb justify-content-center" style="--bs-breadcrumb-divider-color:rgba(255,255,255,0.5);">
+          <li class="breadcrumb-item"><a href="index.html" class="text-warning">Beranda</a></li>
+          <li class="breadcrumb-item active text-white">Produk</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- FILTER TABS -->
+  <section class="py-4 bg-light border-bottom sticky-tabs" id="filter-nav">
+    <div class="container">
+      <div class="d-flex flex-wrap gap-2 justify-content-center">
+        <button class="btn btn-danger btn-sm rounded-pill px-4 filter-btn active" data-filter="all">Semua Menu</button>
+        <button class="btn btn-outline-danger btn-sm rounded-pill px-4 filter-btn" data-filter="smoothie">🥤 Smoothie</button>
+        <button class="btn btn-outline-danger btn-sm rounded-pill px-4 filter-btn" data-filter="avocado">🥑 Avocado Series</button>
+        <button class="btn btn-outline-danger btn-sm rounded-pill px-4 filter-btn" data-filter="coco">🥥 Coco Series</button>
+        <button class="btn btn-outline-danger btn-sm rounded-pill px-4 filter-btn" data-filter="special">✨ Special</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUK GRID -->
+  <section class="py-5 bg-light" id="all">
+    <div class="container">
+      <div class="row g-4" id="productGrid">
+
+        <!-- SMOOTHIE SERIES -->
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="smoothie" id="smoothie">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <span class="product-badge">🔥 Terlaris</span>
+              <img src="assets/img/mango-smoothie.svg" alt="Mango Smoothie Momoy Cheesetea - minuman segar mangga" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">🥤 Smoothie</div>
+              <h2 class="h6 fw-700 mb-1">Mango Smoothie</h2>
+              <p class="text-muted small mb-2">Kelezatan mangga segar yang diblender dengan sempurna. Manis alami tanpa pemanis buatan.</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 16.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Mango%20Smoothie!&utm_source=website&utm_medium=product_page&utm_campaign=mango_smoothie"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'mango_smoothie_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="smoothie">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <img src="assets/img/strawberry-smoothie.svg" alt="Strawberry Smoothie Momoy Cheesetea - minuman segar stroberi" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">🥤 Smoothie</div>
+              <h2 class="h6 fw-700 mb-1">Strawberry Smoothie</h2>
+              <p class="text-muted small mb-2">Stroberi merah segar diproses menjadi smoothie yang menyegarkan dan kaya vitamin C.</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 16.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Strawberry%20Smoothie!&utm_source=website&utm_medium=product_page&utm_campaign=strawberry_smoothie"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'strawberry_smoothie_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="smoothie avocado" id="avocado">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <span class="product-badge">⭐ Favorit</span>
+              <img src="assets/img/avocado-smoothie.svg" alt="Avocado Smoothie Momoy Cheesetea - minuman alpukat segar" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">🥑 Avocado</div>
+              <h2 class="h6 fw-700 mb-1">Avocado Smoothie</h2>
+              <p class="text-muted small mb-2">Alpukat pilihan diblender creamy, kaya lemak sehat dan nutrisi penting untuk tubuh.</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 16.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Avocado%20Smoothie!&utm_source=website&utm_medium=product_page&utm_campaign=avocado_smoothie"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'avocado_smoothie_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="avocado special">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <img src="assets/img/avocado-coffee.svg" alt="Avocado Coffee Momoy Cheesetea - kopi alpukat premium" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">☕ Special</div>
+              <h2 class="h6 fw-700 mb-1">Avocado Coffee</h2>
+              <p class="text-muted small mb-2">Kombinasi sempurna antara kopi dan alpukat. Creamy, rich, dan memberikan energi sepanjang hari.</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 17.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Avocado%20Coffee!&utm_source=website&utm_medium=product_page&utm_campaign=avocado_coffee"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'avocado_coffee_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="avocado">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <img src="assets/img/avocado-dancow.svg" alt="Avocado Dancow Momoy Cheesetea - alpukat susu dancow" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">🥑 Avocado</div>
+              <h2 class="h6 fw-700 mb-1">Avocado Dancow</h2>
+              <p class="text-muted small mb-2">Paduan alpukat creamy dengan susu Dancow yang kaya protein. Cocok untuk semua usia.</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 17.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Avocado%20Dancow!&utm_source=website&utm_medium=product_page&utm_campaign=avocado_dancow"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'avocado_dancow_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="avocado">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <img src="assets/img/avocado-milo.svg" alt="Avocado Milo Momoy Cheesetea - alpukat milo coklat" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">🥑 Avocado</div>
+              <h2 class="h6 fw-700 mb-1">Avocado Milo</h2>
+              <p class="text-muted small mb-2">Kombinasi unik alpukat dengan Milo coklat yang menghasilkan minuman kaya rasa dan energi.</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 17.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Avocado%20Milo!&utm_source=website&utm_medium=product_page&utm_campaign=avocado_milo"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'avocado_milo_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="avocado">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <span class="product-badge">🧀 Cheesy!</span>
+              <img src="assets/img/avocado-keju.svg" alt="Avocado Keju Momoy Cheesetea - alpukat keju cheese" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">🥑 Avocado</div>
+              <h2 class="h6 fw-700 mb-1">Avocado Keju</h2>
+              <p class="text-muted small mb-2">Alpukat creamy bertemu kejutan keju gurih di atasnya. Kombinasi lezat yang bikin nagih!</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 17.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Avocado%20Keju!&utm_source=website&utm_medium=product_page&utm_campaign=avocado_keju"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'avocado_keju_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="avocado">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <span class="product-badge" style="background:#27AE60;">💚 Hemat</span>
+              <img src="assets/img/avocado-original.svg" alt="Avocado Original Momoy Cheesetea - alpukat original murni" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">🥑 Avocado</div>
+              <h2 class="h6 fw-700 mb-1">Avocado Original</h2>
+              <p class="text-muted small mb-2">Rasa alpukat murni tanpa campuran berlebih. Pilihan terbaik untuk pecinta alpukat sejati.</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 14.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Avocado%20Original!&utm_source=website&utm_medium=product_page&utm_campaign=avocado_original"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'avocado_original_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="avocado special">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <img src="assets/img/red-avocado.svg" alt="Red Avocado Momoy Cheesetea - alpukat merah premium" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">🔴 Special</div>
+              <h2 class="h6 fw-700 mb-1">Red Avocado</h2>
+              <p class="text-muted small mb-2">Sentuhan merah yang unik dalam minuman alpukat. Tampilannya menarik, rasanya luar biasa!</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 17.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Red%20Avocado!&utm_source=website&utm_medium=product_page&utm_campaign=red_avocado"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'red_avocado_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="coco" id="coco">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <img src="assets/img/watermelon-coco.svg" alt="Watermelon Coco Momoy Cheesetea - semangka kelapa segar" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">🥥 Coco</div>
+              <h2 class="h6 fw-700 mb-1">Watermelon Coco</h2>
+              <p class="text-muted small mb-2">Kesegaran semangka bertemu kelapa. Minuman tropis paling menyegarkan di hari terik!</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 15.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Watermelon%20Coco!&utm_source=website&utm_medium=product_page&utm_campaign=watermelon_coco"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'watermelon_coco_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="coco">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <img src="assets/img/strawberry-coco.svg" alt="Strawberry Coco Momoy Cheesetea - stroberi kelapa tropis" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">🥥 Coco</div>
+              <h2 class="h6 fw-700 mb-1">Strawberry Coco</h2>
+              <p class="text-muted small mb-2">Stroberi manis asam dipadukan dengan coconut yang menyegarkan. Favorit semua kalangan!</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 15.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Strawberry%20Coco!&utm_source=website&utm_medium=product_page&utm_campaign=strawberry_coco"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'strawberry_coco_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 product-item" data-category="special" id="special">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <span class="product-badge" style="background:#E91E63;">💎 Premium</span>
+              <img src="assets/img/choco-nutella.svg" alt="Choco Nutella Momoy Cheesetea - coklat nutella premium" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <div class="product-category-tag mb-1">✨ Special</div>
+              <h2 class="h6 fw-700 mb-1">Choco Nutella</h2>
+              <p class="text-muted small mb-2">Kelezatan coklat Nutella premium dalam sajian minuman yang rich dan creamy. Harus dicoba!</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto">
+                <span class="product-price">Rp 20.000</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20mau%20pesan%20Choco%20Nutella!&utm_source=website&utm_medium=product_page&utm_campaign=choco_nutella"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'choco_nutella_produk'});">
+                  <i class="bi bi-bag-plus me-1"></i>Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div>
+  </section>
+
+  <!-- TOPPING SECTION -->
+  <section class="py-5 bg-white" id="topping">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Tambahan Lezat</p>
+        <h2 class="section-title">Pilihan <span>Topping</span></h2>
+        <p class="text-muted">Setiap topping hanya <strong class="text-danger">+Rp 4.000</strong>. Pilih satu untuk pengalaman rasa yang lebih kaya!</p>
+      </div>
+      <div class="row g-3 justify-content-center">
+        <div class="col-auto">
+          <div class="topping-card text-center p-3 rounded-3 border bg-light" style="min-width:120px;">
+            <div style="font-size:2rem;margin-bottom:.5rem;">🧋</div>
+            <div class="fw-700 small">Boba</div>
+            <div class="text-danger fw-700 small">+Rp 4K</div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="topping-card text-center p-3 rounded-3 border bg-light" style="min-width:120px;">
+            <div style="font-size:2rem;margin-bottom:.5rem;">🧀</div>
+            <div class="fw-700 small">Cream Cheese</div>
+            <div class="text-danger fw-700 small">+Rp 4K</div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="topping-card text-center p-3 rounded-3 border bg-light" style="min-width:120px;">
+            <div style="font-size:2rem;margin-bottom:.5rem;">🧀</div>
+            <div class="fw-700 small">Keju</div>
+            <div class="text-danger fw-700 small">+Rp 4K</div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="topping-card text-center p-3 rounded-3 border bg-light" style="min-width:120px;">
+            <div style="font-size:2rem;margin-bottom:.5rem;">🥛</div>
+            <div class="fw-700 small">Dancow</div>
+            <div class="text-danger fw-700 small">+Rp 4K</div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="topping-card text-center p-3 rounded-3 border bg-light" style="min-width:120px;">
+            <div style="font-size:2rem;margin-bottom:.5rem;">🍫</div>
+            <div class="fw-700 small">Milo</div>
+            <div class="text-danger fw-700 small">+Rp 4K</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA PESAN -->
+  <section class="py-5" style="background:linear-gradient(135deg,#8B1A1A,#C0392B);">
+    <div class="container text-center text-white">
+      <h2 class="fw-900 mb-3" style="font-family:'Nunito',sans-serif;">Sudah Memilih Favoritmu?</h2>
+      <p class="mb-4 opacity-90">Pesan sekarang via WhatsApp dan nikmati minumanmu dalam hitungan menit!</p>
+      <a href="https://wa.me/628138199863?text=Halo%20Momoy%20Cheesetea,%20saya%20mau%20pesan!&utm_source=website&utm_medium=produk_cta&utm_campaign=pesan_sekarang"
+         target="_blank" rel="noopener"
+         class="btn btn-warning btn-lg px-5 rounded-pill fw-700"
+         onclick="gtag('event','whatsapp_click',{'event_category':'conversion','event_label':'produk_cta'});">
+        <i class="bi bi-whatsapp me-2"></i>Pesan via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <i class="bi bi-cup-hot-fill" style="font-size:1.8rem;color:#FFD700;"></i>
+            <div>
+              <span style="font-family:'Nunito',sans-serif;font-weight:900;font-size:1.3rem;">Momoy</span>
+              <span class="d-block" style="font-size:0.65rem;letter-spacing:3px;opacity:0.7;">CHEESETEA</span>
+            </div>
+          </div>
+          <p class="text-muted small">Minuman segar berkualitas dengan harga terjangkau.</p>
+        </div>
+        <div class="col-md-2 offset-md-1">
+          <h4 class="h6 fw-700 mb-3 text-warning">Halaman</h4>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Beranda</a></li>
+            <li class="mb-2"><a href="produk.html" class="text-white-50 text-decoration-none">Produk</a></li>
+            <li class="mb-2"><a href="artikel-1.html" class="text-white-50 text-decoration-none">Artikel</a></li>
+            <li class="mb-2"><a href="kontak.html" class="text-white-50 text-decoration-none">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="h6 fw-bold mb-3 text-warning" style="font-size:1.05rem;">Kontak & Outlet</h4>
+          <ul class="list-unstyled mb-0" style="color:#ffffff; font-size:0.92rem;">
+            <li class="mb-2">
+              <a href="https://wa.me/628138199863?text=Halo%20Momoy%20Cheesetea!" target="_blank" rel="noopener" class="text-white text-decoration-none fw-bold">
+                <i class="bi bi-whatsapp me-2 text-success" style="font-size:1.15rem;"></i>0813-8199-863
+              </a>
+            </li>
+            <li class="mb-2 text-white d-flex align-items-start">
+              <i class="bi bi-geo-alt-fill me-2 text-danger" style="font-size:1.15rem; flex-shrink:0;"></i>
+              <span>Jl. Moh Toha No.35, Kota Cirebon</span>
+            </li>
+            <li class="mb-2 text-white d-flex align-items-center">
+              <i class="bi bi-clock-fill me-2 text-warning" style="font-size:1.15rem; flex-shrink:0;"></i>
+              <span>15.00 – 22.00 WIB</span>
+            </li>
+            <li class="mb-2 text-white d-flex align-items-center">
+              <i class="bi bi-calendar-check me-2 text-info" style="font-size:1.15rem; flex-shrink:0;"></i>
+              <span>Senin – Minggu (Buka Tiap Hari)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary" />
+      <p class="text-muted small text-center mb-0">© 2026 Momoy Cheesetea. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Product Filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.classList.remove('active', 'btn-danger');
+          b.classList.add('btn-outline-danger');
+        });
+        this.classList.add('active', 'btn-danger');
+        this.classList.remove('btn-outline-danger');
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.product-item').forEach(item => {
+          if (filter === 'all' || item.dataset.category.includes(filter)) {
+            item.style.display = '';
+            item.style.animation = 'fadeInUp 0.4s ease';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+        gtag('event', 'filter_click', {'event_category': 'engagement', 'event_label': filter});
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+

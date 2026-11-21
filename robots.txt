@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or sensitive files if added later
+Disallow: /assets/scratch/
+
+# Sitemap location
+Sitemap: https://momoycheesetea.com/sitemap.xml

@@ -1,0 +1,821 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Momoy Cheesetea – Minuman Segar Cheese Tea & Smoothie Terbaik</title>
+  <meta name="description" content="Momoy Cheesetea menyajikan minuman segar berkualitas: Avocado Smoothie, Cheese Tea, Mango Smoothie, dan banyak lagi. Harga mulai 14K. Pesan sekarang!" />
+  <link rel="canonical" href="https://momoycheesetea.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://momoycheesetea.com/" />
+  <meta property="og:title" content="Momoy Cheesetea – Minuman Segar Cheese Tea & Smoothie Terbaik" />
+  <meta property="og:description" content="Momoy Cheesetea menyajikan minuman segar berkualitas: Avocado Smoothie, Cheese Tea, Mango Smoothie, dan banyak lagi. Harga mulai 14K." />
+  <meta property="og:image" content="https://momoycheesetea.com/assets/img/og-image.jpg" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Momoy Cheesetea – Minuman Segar Cheese Tea & Smoothie" />
+  <meta name="twitter:description" content="Nikmati kesegaran minuman Momoy Cheesetea mulai Rp 14.000. Tersedia berbagai pilihan rasa!" />
+  <meta name="twitter:image" content="https://momoycheesetea.com/assets/img/og-image.jpg" />
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <style>
+    /* =========================================
+       HERO SECTION
+    ========================================= */
+    .hero-section {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #8B1A1A 0%, #C0392B 40%, #E74C3C 70%, #FF6B35 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 400px;
+      height: 400px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      padding: 6px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .hero-title {
+      font-family: 'Nunito', sans-serif;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    .hero-title span {
+      color: #FFD700;
+    }
+    .hero-desc {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+    .hero-floating-card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
+    .hero-floating-card:hover { transform: translateY(-5px); }
+    .hero-floating-card .number {
+      font-family: 'Nunito', sans-serif;
+      font-size: 2rem;
+      font-weight: 900;
+      color: #FFD700;
+    }
+
+    /* =========================================
+       FEATURES STRIP
+    ========================================= */
+    .features-strip {
+      background: #FFD700;
+      padding: 1rem 0;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #8B1A1A;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .feature-item i { font-size: 1.3rem; }
+
+    /* =========================================
+       SECTION STYLES
+    ========================================= */
+    .section-eyebrow {
+      color: #C0392B;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .section-title {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: #2D2D2D;
+      margin-bottom: 1rem;
+    }
+    .section-title span { color: #C0392B; }
+
+    /* =========================================
+       PRODUCT CARDS
+    ========================================= */
+    .product-card {
+      border: none;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      background: #fff;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(192,57,43,0.2);
+    }
+    .product-card .card-img-wrap {
+      background: linear-gradient(135deg, #FFF5F5, #FFE8E8);
+      padding: 1.5rem;
+      text-align: center;
+      position: relative;
+    }
+    .product-card .card-img-wrap img {
+      height: 160px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover .card-img-wrap img { transform: scale(1.08); }
+    .product-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #C0392B;
+      color: #fff;
+      border-radius: 50px;
+      padding: 4px 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .product-price {
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #C0392B;
+    }
+
+    /* =========================================
+       WHY US / BENEFIT
+    ========================================= */
+    .benefit-card {
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .benefit-card:hover {
+      border-color: #C0392B;
+      transform: translateY(-5px);
+    }
+    .benefit-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, #C0392B, #E74C3C);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.2rem;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+
+    /* =========================================
+       TESTIMONIAL
+    ========================================= */
+    .testimonial-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      border-left: 4px solid #C0392B;
+      transition: transform 0.3s ease;
+    }
+    .testimonial-card:hover { transform: translateY(-5px); }
+    .stars { color: #FFD700; font-size: 1.1rem; }
+
+    /* =========================================
+       CTA SECTION
+    ========================================= */
+    .cta-section {
+      background: linear-gradient(135deg, #8B1A1A, #C0392B);
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -15%;
+      width: 500px; height: 500px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+
+    /* =========================================
+       ARTICLE PREVIEW
+    ========================================= */
+    .article-card {
+      border: none;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+    }
+    .article-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+    .article-card .card-img-top {
+      height: 220px;
+      object-fit: cover;
+    }
+    .article-tag {
+      background: #FFF5F5;
+      color: #C0392B;
+      border: 1px solid #FFCDD2;
+      border-radius: 50px;
+      padding: 3px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <div class="brand-logo-wrap">
+          <i class="bi bi-cup-hot-fill" style="font-size:1.6rem; color:#FFD700;"></i>
+        </div>
+        <div>
+          <span class="brand-name">Momoy</span>
+          <span class="brand-sub d-block" style="font-size:0.65rem; letter-spacing:3px; opacity:0.85; line-height:1;">CHEESETEA</span>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="artikel-1.html">Tips & Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-warning btn-sm px-3 fw-700" href="https://wa.me/628138199863?text=Halo%20Momoy%20Cheesetea,%20saya%20ingin%20pesan!&utm_source=website&utm_medium=navbar&utm_campaign=cta_pesan"
+               target="_blank" rel="noopener" onclick="gtag('event','whatsapp_click',{'event_category':'conversion','event_label':'navbar'});">
+              <i class="bi bi-whatsapp me-1"></i> Pesan Sekarang
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero-section" id="beranda">
+    <div class="container position-relative" style="z-index:2;">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="hero-badge">
+            <i class="bi bi-star-fill me-1"></i> #1 Cheese Tea Favorit
+          </div>
+          <h1 class="hero-title">
+            Kesegaran <span>Cheese Tea</span> yang Bikin Nagih!
+          </h1>
+          <p class="hero-desc">
+            Momoy Cheesetea hadir dengan pilihan minuman segar dan lezat – dari avocado smoothie, cheese tea, hingga tropical drinks. Harga terjangkau, rasa premium, mulai <strong style="color:#FFD700;">Rp 14.000</strong>!
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="produk.html" class="btn btn-warning btn-lg fw-bold px-4 shadow-lg" onclick="gtag('event','view_menu_click',{'event_category':'engagement','event_label':'hero'});">
+              <i class="bi bi-grid-3x3-gap me-2"></i>Lihat Menu
+            </a>
+            <a href="https://wa.me/628138199863?text=Halo%20Momoy%20Cheesetea,%20saya%20ingin%20pesan!&utm_source=website&utm_medium=hero&utm_campaign=cta_pesan"
+               target="_blank" rel="noopener"
+               class="btn btn-outline-light btn-lg px-4"
+               onclick="gtag('event','whatsapp_click',{'event_category':'conversion','event_label':'hero'});">
+              <i class="bi bi-whatsapp me-2"></i>Chat WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="hero-floating-card mb-3">
+                <div class="number">12+</div>
+                <div style="font-size:0.9rem; opacity:0.9;">Varian Minuman</div>
+              </div>
+              <div class="hero-floating-card">
+                <div class="number">⭐ 4.9</div>
+                <div style="font-size:0.9rem; opacity:0.9;">Rating Pelanggan</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="hero-floating-card mb-3" style="margin-top:2rem;">
+                <div class="number">Rp14K</div>
+                <div style="font-size:0.9rem; opacity:0.9;">Mulai Dari</div>
+              </div>
+              <div class="hero-floating-card">
+                <div class="number">5+</div>
+                <div style="font-size:0.9rem; opacity:0.9;">Pilihan Topping</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative circles -->
+    <div style="position:absolute;top:10%;right:5%;width:200px;height:200px;background:rgba(255,215,0,0.1);border-radius:50%;z-index:1;"></div>
+    <div style="position:absolute;bottom:15%;left:3%;width:120px;height:120px;background:rgba(255,255,255,0.08);border-radius:50%;z-index:1;"></div>
+  </section>
+
+  <!-- ============================================================
+       FEATURES STRIP
+  ============================================================ -->
+  <div class="features-strip">
+    <div class="container">
+      <div class="row g-3 justify-content-center text-center">
+        <div class="col-auto">
+          <div class="feature-item"><i class="bi bi-geo-alt-fill text-danger"></i><span>Jl. Moh Toha No.35, Kota Cirebon</span></div>
+        </div>
+        <div class="col-auto">
+          <div class="feature-item"><i class="bi bi-clock-fill text-danger"></i><span>Buka: 15.00 – 22.00 WIB (Senin – Minggu)</span></div>
+        </div>
+        <div class="col-auto">
+          <div class="feature-item"><i class="bi bi-whatsapp text-success"></i><span>WhatsApp: 0813-8199-863</span></div>
+        </div>
+        <div class="col-auto">
+          <div class="feature-item"><i class="bi bi-patch-check-fill text-danger"></i><span>100% Buah Segar</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PRODUK UNGGULAN
+  ============================================================ -->
+  <section class="py-5 py-lg-6 bg-light" id="produk-unggulan">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Menu Favorit</p>
+        <h2 class="section-title">Produk <span>Unggulan</span> Kami</h2>
+        <p class="text-muted mx-auto" style="max-width:500px;">Dibuat dengan bahan segar berkualitas, setiap tegukan memberikan kesegaran yang tak terlupakan.</p>
+      </div>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <span class="product-badge">🔥 Terlaris</span>
+              <img src="assets/img/avocado-smoothie.svg" alt="Avocado Smoothie Momoy Cheesetea" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <h3 class="h6 fw-700 mb-1">Avocado Smoothie</h3>
+              <p class="text-muted small mb-2">Creamy avocado blended sempurna</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="product-price">Rp 16K</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20pesan%20Avocado%20Smoothie!&utm_source=website&utm_medium=product_card&utm_campaign=avocado_smoothie"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'avocado_smoothie'});">
+                  Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <span class="product-badge">⭐ Favorit</span>
+              <img src="assets/img/mango-smoothie.svg" alt="Mango Smoothie Momoy Cheesetea" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <h3 class="h6 fw-700 mb-1">Mango Smoothie</h3>
+              <p class="text-muted small mb-2">Segar manis mangga pilihan</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="product-price">Rp 16K</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20pesan%20Mango%20Smoothie!&utm_source=website&utm_medium=product_card&utm_campaign=mango_smoothie"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'mango_smoothie'});">
+                  Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <span class="product-badge" style="background:#E91E63;">💎 Premium</span>
+              <img src="assets/img/choco-nutella.svg" alt="Choco Nutella Momoy Cheesetea" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <h3 class="h6 fw-700 mb-1">Choco Nutella</h3>
+              <p class="text-muted small mb-2">Coklat nutella rich & creamy</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="product-price">Rp 20K</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20pesan%20Choco%20Nutella!&utm_source=website&utm_medium=product_card&utm_campaign=choco_nutella"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'choco_nutella'});">
+                  Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="product-card card h-100">
+            <div class="card-img-wrap">
+              <img src="assets/img/strawberry-coco.svg" alt="Strawberry Coco Momoy Cheesetea" class="img-fluid" loading="lazy" width="160" height="160" onerror="this.src='assets/img/placeholder-drink.svg'"/>
+            </div>
+            <div class="card-body p-3">
+              <h3 class="h6 fw-700 mb-1">Strawberry Coco</h3>
+              <p class="text-muted small mb-2">Stroberi segar dengan coconut</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="product-price">Rp 15K</span>
+                <a href="https://wa.me/628138199863?text=Halo,%20saya%20pesan%20Strawberry%20Coco!&utm_source=website&utm_medium=product_card&utm_campaign=strawberry_coco"
+                   target="_blank" rel="noopener"
+                   class="btn btn-sm btn-danger rounded-pill"
+                   onclick="gtag('event','order_click',{'event_category':'conversion','event_label':'strawberry_coco'});">
+                  Pesan
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="produk.html" class="btn btn-danger btn-lg px-5 rounded-pill fw-700">
+          <i class="bi bi-grid-3x3-gap me-2"></i>Lihat Semua Menu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY US
+  ============================================================ -->
+  <section class="py-5 py-lg-6 bg-white" id="keunggulan">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <p class="section-eyebrow">Kenapa Pilih Kami?</p>
+          <h2 class="section-title">Alasan <span>Ribuan Pelanggan</span> Percaya pada Momoy</h2>
+          <p class="text-muted mb-4">Kami berkomitmen menghadirkan minuman berkualitas dengan harga yang bersahabat. Kepuasan pelanggan adalah prioritas utama kami.</p>
+          <a href="kontak.html" class="btn btn-danger px-4 rounded-pill fw-700">Hubungi Kami</a>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-4">
+            <div class="col-sm-6">
+              <div class="benefit-card">
+                <div class="benefit-icon"><i class="bi bi-leaf-fill"></i></div>
+                <h3 class="h5 fw-700">Bahan Segar</h3>
+                <p class="text-muted small mb-0">Kami hanya menggunakan bahan-bahan segar pilihan setiap harinya.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="benefit-card">
+                <div class="benefit-icon"><i class="bi bi-wallet2"></i></div>
+                <h3 class="h5 fw-700">Harga Terjangkau</h3>
+                <p class="text-muted small mb-0">Mulai dari Rp 14.000, kenikmatan premium bisa dinikmati semua kalangan.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="benefit-card">
+                <div class="benefit-icon"><i class="bi bi-palette-fill"></i></div>
+                <h3 class="h5 fw-700">Varian Lengkap</h3>
+                <p class="text-muted small mb-0">12+ varian menu dengan 5 pilihan topping yang bisa dikustomisasi.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="benefit-card">
+                <div class="benefit-icon"><i class="bi bi-trophy-fill"></i></div>
+                <h3 class="h5 fw-700">Kualitas Terjamin</h3>
+                <p class="text-muted small mb-0">Setiap minuman dibuat dengan standar higienitas tinggi dan penuh cinta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONI
+  ============================================================ -->
+  <section class="py-5 py-lg-6" style="background:#FFF8F8;" id="testimoni">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Kata Pelanggan</p>
+        <h2 class="section-title">Apa Kata <span>Mereka?</span></h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars mb-2">★★★★★</div>
+            <p class="text-muted mb-3">"Avocado Keju-nya enak banget! Creamy dan segar. Harganya juga affordable banget, cocok buat mahasiswa kayak saya. Pasti balik lagi!"</p>
+            <div class="d-flex align-items-center gap-3">
+              <div style="width:45px;height:45px;background:linear-gradient(135deg,#C0392B,#E74C3C);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">R</div>
+              <div>
+                <div class="fw-700 small">Rina Apriani</div>
+                <div class="text-muted" style="font-size:0.8rem;">Pelanggan Setia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars mb-2">★★★★★</div>
+            <p class="text-muted mb-3">"Choco Nutella-nya juara! Cocoa-nya berasa banget, nggak terlalu manis. Setiap siang selalu mampir ke Momoy buat beli minuman."</p>
+            <div class="d-flex align-items-center gap-3">
+              <div style="width:45px;height:45px;background:linear-gradient(135deg,#2980B9,#3498DB);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">B</div>
+              <div>
+                <div class="fw-700 small">Bagas Nugroho</div>
+                <div class="text-muted" style="font-size:0.8rem;">Pelanggan Baru</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="stars mb-2">★★★★★</div>
+            <p class="text-muted mb-3">"Pesan via WhatsApp mudah banget! Responsif, ramah, dan minumannya selalu fresh. Strawberry Coco jadi minuman wajib aku setiap minggu."</p>
+            <div class="d-flex align-items-center gap-3">
+              <div style="width:45px;height:45px;background:linear-gradient(135deg,#8E44AD,#9B59B6);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;">D</div>
+              <div>
+                <div class="fw-700 small">Dinda Rahayu</div>
+                <div class="text-muted" style="font-size:0.8rem;">Pelanggan VIP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ARTIKEL TERBARU
+  ============================================================ -->
+  <section class="py-5 py-lg-6 bg-white" id="artikel">
+    <div class="container">
+      <div class="text-center mb-5">
+        <p class="section-eyebrow">Blog & Tips</p>
+        <h2 class="section-title">Artikel <span>Terbaru</span></h2>
+        <p class="text-muted">Temukan tips seputar minuman segar dan gaya hidup sehat bersama Momoy Cheesetea.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <article class="article-card card h-100">
+            <div style="background:linear-gradient(135deg,#8B1A1A,#E74C3C);height:220px;display:flex;align-items:center;justify-content:center;">
+              <i class="bi bi-cup-straw" style="font-size:5rem;color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="article-tag">Tips Minuman</span>
+                <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i>November 2026</span>
+              </div>
+              <h3 class="h5 fw-700 mb-2">Manfaat Avocado Smoothie untuk Kesehatan Tubuh Anda</h3>
+              <p class="text-muted small mb-3">Avocado smoothie bukan sekadar minuman enak – kandungan lemak sehat, vitamin, dan mineral di dalamnya memberikan manfaat luar biasa...</p>
+              <a href="artikel-1.html" class="btn btn-sm btn-outline-danger rounded-pill">Baca Selengkapnya →</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="article-card card h-100">
+            <div style="background:linear-gradient(135deg,#1A5276,#2E86C1);height:220px;display:flex;align-items:center;justify-content:center;">
+              <i class="bi bi-stars" style="font-size:5rem;color:rgba(255,255,255,0.3);"></i>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="article-tag">Resep & Tips</span>
+                <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i>November 2026</span>
+              </div>
+              <h3 class="h5 fw-700 mb-2">Tips Memilih Topping Cheese Tea yang Tepat untuk Selera Anda</h3>
+              <p class="text-muted small mb-3">Cheese tea semakin populer di Indonesia. Memilih topping yang tepat bisa membuat pengalaman minum Anda jauh lebih menyenangkan...</p>
+              <a href="artikel-2.html" class="btn btn-sm btn-outline-danger rounded-pill">Baca Selengkapnya →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INFO OUTLET & KONTAK LANGSUNG
+  ============================================================ -->
+  <section class="py-5" style="background:#FFF0F0;" id="lokasi-outlet">
+    <div class="container">
+      <div class="text-center mb-4">
+        <p class="section-eyebrow">Kunjungi & Hubungi Kami</p>
+        <h2 class="section-title">Outlet Resmi <span>Momoy Cheesetea</span></h2>
+        <p class="text-muted mx-auto" style="max-width:550px;">Nikmati langsung di tempat atau pesan secara praktis melalui WhatsApp kami.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Alamat -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm p-4 text-center bg-white">
+            <div style="width:65px;height:65px;background:#FFF0F0;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;">
+              <i class="bi bi-geo-alt-fill text-danger fs-2"></i>
+            </div>
+            <h3 class="h5 fw-800 mb-2">Alamat Outlet</h3>
+            <p class="fw-700 text-dark mb-1 fs-6">Jl. Moh Toha No.35</p>
+            <p class="text-muted small mb-3">Kota Cirebon, Jawa Barat</p>
+            <a href="https://maps.google.com/?q=Jl.+Moh+Toha+No.35+Kota+Cirebon" target="_blank" rel="noopener" class="btn btn-outline-danger btn-sm rounded-pill mt-auto fw-700 px-3">
+              <i class="bi bi-map me-1"></i>Petunjuk Arah (Maps)
+            </a>
+          </div>
+        </div>
+        <!-- Jam Operasional -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm p-4 text-center bg-white">
+            <div style="width:65px;height:65px;background:#FFF9E6;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;">
+              <i class="bi bi-clock-fill text-warning fs-2"></i>
+            </div>
+            <h3 class="h5 fw-800 mb-2">Jam Operasional</h3>
+            <p class="fw-900 text-danger mb-1 fs-5">15.00 – 22.00 WIB</p>
+            <p class="text-muted small mb-3">Buka Setiap Hari (Senin – Minggu)</p>
+            <span class="badge bg-success rounded-pill px-3 py-2 mt-auto align-self-center"><i class="bi bi-door-open-fill me-1"></i>Buka Setiap Hari</span>
+          </div>
+        </div>
+        <!-- WhatsApp -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 rounded-4 shadow-sm p-4 text-center bg-white">
+            <div style="width:65px;height:65px;background:#E8F8F5;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;">
+              <i class="bi bi-whatsapp text-success fs-2"></i>
+            </div>
+            <h3 class="h5 fw-800 mb-2">Pemesanan WhatsApp</h3>
+            <p class="fw-900 text-success mb-1 fs-5">0813-8199-863</p>
+            <p class="text-muted small mb-3">Fast response untuk delivery & takeaway</p>
+            <a href="https://wa.me/628138199863?text=Halo%20Momoy%20Cheesetea,%20saya%20mau%20pesan!&utm_source=website&utm_medium=outlet_card&utm_campaign=cta_pesan" target="_blank" rel="noopener" class="btn btn-success btn-sm rounded-pill mt-auto fw-700 px-4">
+              <i class="bi bi-whatsapp me-1"></i>Chat WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA SECTION
+  ============================================================ -->
+  <section class="cta-section text-white text-center">
+    <div class="container position-relative" style="z-index:2;">
+      <i class="bi bi-whatsapp" style="font-size:3rem;color:#25D366;margin-bottom:1rem;display:block;"></i>
+      <h2 class="fw-900 mb-3" style="font-family:'Nunito',sans-serif;font-size:clamp(1.8rem,4vw,2.5rem);">Siap Merasakan Kesegaran Momoy?</h2>
+      <p class="mb-4 opacity-90" style="max-width:500px;margin:0 auto 2rem;">Pesan sekarang via WhatsApp dan dapatkan minuman favoritmu dalam hitungan menit!</p>
+      <a href="https://wa.me/628138199863?text=Halo%20Momoy%20Cheesetea,%20saya%20mau%20pesan%20minuman!&utm_source=website&utm_medium=cta_section&utm_campaign=pesan_sekarang"
+         target="_blank" rel="noopener"
+         class="btn btn-warning btn-lg px-5 rounded-pill fw-700 shadow-lg"
+         onclick="gtag('event','whatsapp_click',{'event_category':'conversion','event_label':'cta_section'});">
+        <i class="bi bi-whatsapp me-2"></i>Pesan via WhatsApp Sekarang!
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <i class="bi bi-cup-hot-fill" style="font-size:1.8rem;color:#FFD700;"></i>
+            <div>
+              <span style="font-family:'Nunito',sans-serif;font-weight:900;font-size:1.3rem;">Momoy</span>
+              <span class="d-block" style="font-size:0.65rem;letter-spacing:3px;opacity:0.7;">CHEESETEA</span>
+            </div>
+          </div>
+          <p class="text-white-50 small mb-3">Minuman segar berkualitas dengan harga terjangkau. Nikmati kelezatan cheese tea dan smoothie pilihan kami setiap hari.</p>
+          <div class="d-flex gap-3">
+            <a href="https://instagram.com/momoycheesetea?utm_source=website&utm_medium=footer&utm_campaign=sosmed" target="_blank" rel="noopener" class="text-muted" aria-label="Instagram Momoy Cheesetea"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="https://tiktok.com/@momoycheesetea?utm_source=website&utm_medium=footer&utm_campaign=sosmed" target="_blank" rel="noopener" class="text-muted" aria-label="TikTok Momoy Cheesetea"><i class="bi bi-tiktok fs-5"></i></a>
+            <a href="https://wa.me/628138199863?utm_source=website&utm_medium=footer&utm_campaign=sosmed" target="_blank" rel="noopener" class="text-muted" aria-label="WhatsApp Momoy Cheesetea"><i class="bi bi-whatsapp fs-5"></i></a>
+          </div>
+        </div>
+        <div class="col-md-2 offset-md-1">
+          <h4 class="h6 fw-700 mb-3 text-warning">Halaman</h4>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Beranda</a></li>
+            <li class="mb-2"><a href="produk.html" class="text-white-50 text-decoration-none">Produk</a></li>
+            <li class="mb-2"><a href="artikel-1.html" class="text-white-50 text-decoration-none">Artikel</a></li>
+            <li class="mb-2"><a href="kontak.html" class="text-white-50 text-decoration-none">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6 fw-700 mb-3 text-warning">Menu</h4>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="produk.html#smoothie" class="text-white-50 text-decoration-none">Smoothies</a></li>
+            <li class="mb-2"><a href="produk.html#avocado" class="text-white-50 text-decoration-none">Avocado Series</a></li>
+            <li class="mb-2"><a href="produk.html#coco" class="text-white-50 text-decoration-none">Coco Series</a></li>
+            <li class="mb-2"><a href="produk.html#topping" class="text-white-50 text-decoration-none">Topping</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="h6 fw-bold mb-3 text-warning" style="font-size:1.05rem;">Kontak & Outlet</h4>
+          <ul class="list-unstyled mb-0" style="color:#ffffff; font-size:0.92rem;">
+            <li class="mb-2">
+              <a href="https://wa.me/628138199863?text=Halo%20Momoy%20Cheesetea!" target="_blank" rel="noopener" class="text-white text-decoration-none fw-bold">
+                <i class="bi bi-whatsapp me-2 text-success" style="font-size:1.15rem;"></i>0813-8199-863
+              </a>
+            </li>
+            <li class="mb-2 text-white d-flex align-items-start">
+              <i class="bi bi-geo-alt-fill me-2 text-danger" style="font-size:1.15rem; flex-shrink:0;"></i>
+              <span>Jl. Moh Toha No.35, Kota Cirebon</span>
+            </li>
+            <li class="mb-2 text-white d-flex align-items-center">
+              <i class="bi bi-clock-fill me-2 text-warning" style="font-size:1.15rem; flex-shrink:0;"></i>
+              <span>15.00 – 22.00 WIB</span>
+            </li>
+            <li class="mb-2 text-white d-flex align-items-center">
+              <i class="bi bi-calendar-check me-2 text-info" style="font-size:1.15rem; flex-shrink:0;"></i>
+              <span>Senin – Minggu (Buka Tiap Hari)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary" />
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <p class="text-muted small mb-0">© 2026 Momoy Cheesetea. Hak Cipta Dilindungi.</p>
+        <p class="text-muted small mb-0">Dibuat dengan <i class="bi bi-heart-fill text-danger"></i> untuk UMKM Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
